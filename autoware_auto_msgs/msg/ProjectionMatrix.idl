@@ -1,0 +1,17 @@
+#include "std_msgs/msg/Header.idl"
+
+module autoware_auto_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      " This is a temporary message type until DDS keys are made available in the standard header" "\n"
+      " TODO(c.ho) deprecate when DDS keys are made available" "\n"
+      " Check for when https://index.ros.org/doc/ros2/Tutorials/Rosidl-Tutorial/ updates")
+    struct ProjectionMatrix {
+        std_msgs::msg::Header header;
+
+        @verbatim (language="comment", text=
+        " matrix containing projection configuration")
+        sequence<float, 16> projection_matrix;
+    };
+  };
+};

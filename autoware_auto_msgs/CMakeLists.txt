@@ -16,6 +16,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Quaternion32.idl"
   "msg/TrajectoryPoint.idl"
   "msg/MapPrimitive.idl"
+  "msg/ProjectionMatrix.idl"
   # Interfaces
   "msg/BoundingBoxArray.idl"
   "msg/ControlDiagnostic.idl"
