@@ -17,6 +17,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/TrajectoryPoint.idl"
   "msg/MapPrimitive.idl"
   "msg/ProjectionMatrix.idl"
+  "msg/Lane.idl"
+  "msg/DTLane.idl"
+  "msg/Waypoint.idl"
+  "msg/WaypointState.idl"
   # Interfaces
   "msg/BoundingBoxArray.idl"
   "msg/ControlDiagnostic.idl"
