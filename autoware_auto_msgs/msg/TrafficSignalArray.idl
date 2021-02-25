@@ -1,0 +1,12 @@
+#include "autoware_auto_msgs/msg/TrafficSignal.idl"
+#include "builtin_interfaces/msg/Header.idl"
+
+module autoware_auto_msgs {
+  module msg {
+    struct TrafficSignalArray {
+      std_msgs::msg::Header header;
+
+      sequence<autoware_auto_msgs::msg::TrafficSignal, 100> signals;
+    };
+  };
+};
