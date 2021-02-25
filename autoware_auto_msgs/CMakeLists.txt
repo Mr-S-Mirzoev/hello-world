@@ -10,24 +10,15 @@ ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   # Helper types
-  "msg/AdjustXY.idl"
   "msg/BoundingBox.idl"
   "msg/Complex32.idl"
   "msg/DiagnosticHeader.idl"
-  "msg/DetectedObject.idl"
-  "msg/DetectedObjectArray.idl"
-  "msg/DTLane.idl"
-  "msg/ExtractedPosition.idl"
-  "msg/Lane.idl"
-  "msg/LaneArray.idl"
   "msg/MapPrimitive.idl"
   "msg/ProjectionMatrix.idl"
-  "msg/Signals.idl"
   "msg/Quaternion32.idl"
   "msg/TrajectoryPoint.idl"
-  "msg/Waypoint.idl"
-  "msg/WaypointState.idl"
   # Interfaces
+  "msg/AdjustXY.idl"
   "msg/BoundingBoxArray.idl"
   "msg/ControlDiagnostic.idl"
   "msg/HighLevelControlCommand.idl"

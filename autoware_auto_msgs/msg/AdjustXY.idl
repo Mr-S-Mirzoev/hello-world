@@ -5,8 +5,8 @@ module autoware_auto_msgs {
         struct AdjustXY {
             std_msgs::msg::Header header;
 
-            int32 x;
-            int32 y;
+            sequence<int32> x;
+            sequence<int32> y;
         };
     };
 };
