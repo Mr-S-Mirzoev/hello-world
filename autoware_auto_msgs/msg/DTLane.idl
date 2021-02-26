@@ -1,0 +1,14 @@
+module autoware_auto_msgs {
+    module msg {
+        struct DTLane {
+            float dist;
+            float dir;
+            float apara;
+            float r;
+            float slope;
+            float cant;
+            float lw;
+            float rw;
+        };
+    };
+};

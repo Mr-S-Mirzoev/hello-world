@@ -1,0 +1,54 @@
+module autoware_auto_msgs {
+    module msg {
+        @verbatim (language="comment", text=
+        " ExtractedPosition.msg" "\n"
+        " This message defines the information required to describe a lamp (bulb)" "\n"
+        " in a traffic signal, according to the information extracted from the ADAS Map" "\n"
+        " and the extrinsic camera calibration" "\n")
+        struct ExtractedPosition {
+            @verbatim (language="comment", text=
+            " Traffic Signal Lamp ID")
+            int32 signalId;
+
+            @verbatim (language="comment", text=
+            " Lamp ROI x in image coords")
+            int32 u;
+
+            @verbatim (language="comment", text=
+            " Lamp ROI y in image coords")
+            int32 v;
+
+            @verbatim (language="comment", text=
+            " Lamp Radius")
+            int32 radius;
+
+            @verbatim (language="comment", text=
+            " X position in map coordinates")
+            float x; 
+
+            @verbatim (language="comment", text=
+            " Y position in map coordinates")
+            float y;
+
+            @verbatim (language="comment", text=
+            " Z position in map coordinates")
+            float z;
+
+            @verbatim (language="comment", text=
+            " Azimuth Horizontal Angle")
+            float hang;
+
+            @verbatim (language="comment", text=
+            " Lamp Type (red, yellow, green, ...)")
+            int8 type;
+
+            @verbatim (language="comment", text=
+            " Closest LinkID (lane) in VectorMap")
+            int32 linkId;
+
+            @verbatim (language="comment", text=
+            " PoleID to which this Lamp belongs to")
+            int32 plId;
+        };
+    };
+};

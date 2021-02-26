@@ -1,0 +1,12 @@
+#include "std_msgs/msg/Header.idl"
+#include "autoware_auto_msgs/msg/ExtractedPosition.idl"
+
+module autoware_auto_msgs {
+    module msg {
+        struct Signals {
+            std_msgs::msg::Header header;
+
+            sequence<autoware_auto_msgs::msg::ExtractedPosition> Signals;
+        };
+    };
+};
